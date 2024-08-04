@@ -21,7 +21,7 @@ const Navbar = () => {
 
     return (
         <nav
-            className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-full p-4 transition-all duration-300 ${isScrolled ? 'backdrop-blur-lg top-5 rounded-3xl shadow-md w-[80%]' : 'bg-transparent w-full'
+            className={`fixed top-0 left-1/2 transform -translate-x-1/2 w-full p-4 transition-all duration-300 ${isScrolled ? 'backdrop-blur-lg top-5 rounded-3xl shadow-md w-[79%]' : 'bg-transparent w-full'
                 }`}
             style={{ zIndex: 1000 }}
         >
