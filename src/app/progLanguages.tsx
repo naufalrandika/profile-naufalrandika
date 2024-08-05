@@ -9,7 +9,6 @@ const languages = [
     { name: 'Python', img: '/programLangs/Python.svg' },
     { name: 'PHP', img: '/programLangs/PHP.svg' },
     { name: 'TypeScript', img: '/programLangs/TypeScript.svg' },
-    // Add more languages here
 ];
 
 export default function ProgLanguages() {
@@ -19,8 +18,8 @@ export default function ProgLanguages() {
         speed: 500,
         slidesToShow: 4,
         slidesToScroll: 1,
-        autoplay: true, // Enable autoplay
-        autoplaySpeed: 3000, // 5 seconds
+        autoplay: true,
+        autoplaySpeed: 3000,
         responsive: [
             {
                 breakpoint: 1024,
@@ -43,7 +42,7 @@ export default function ProgLanguages() {
         <main>
             <FadeUpStagger>
                 <FadeUpDiv>
-                    <h2 style={{ textAlign: 'center' }}>Programming Languages</h2>
+                    <h1 className='text-2xl font-black text-center'>Programing Languages</h1>
                     <Slider {...settings}>
                         {languages.map((language, index) => (
                             <div key={index} style={{ textAlign: 'center', padding: '10px' }}>

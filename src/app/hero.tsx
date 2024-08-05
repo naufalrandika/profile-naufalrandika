@@ -100,11 +100,35 @@ export default function Hero() {
                         <CardName name='Instagram' id='@nrandika_p'>
                         </CardName>
                     </LinkCard>
-                    <FadeUpCard className='col-span-12 grid gap-3 p-6 transition-colors hover:border-red-500 dark:hover:border-gray-500 md:col-span-6 lg:col-span-4'>
+                    <FadeUpCard className='col-span-12 grid gap-3 p-6 transition-colors hover:border-red-500 dark:hover:border-red-500 md:col-span-6 lg:col-span-4'>
                         <CardIcon className='bg-red-500'>
                             <FaSquareEnvelope size={25} />
                         </CardIcon>
                         <CardName name='Email' id='naufalrandika44@gmail.com' />
+                    </FadeUpCard>
+                    <FadeUpCard className='col-span-12 grid gap-3 p-6 transition-colors hover:border-red-500 dark:hover:border-red-500 md:col-span-12 lg:col-span-8'>
+                        <a className='text-center text-L'>Experience In Tech</a>
+                        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3'>
+                            <div className='flex items-center gap-3 text-muted-foreground'>
+                                <Image width={32} height={32} src='/companyLogo/ppi.png' alt='javascript' />
+                                <p>PT PPI</p>
+                                <p> | </p>
+                                <p>Software Developer Intern</p>
+                            </div>
+                            <div className='flex items-center gap-3 text-muted-foreground'>
+                                <Image width={32} height={32} src='/companyLogo/wpi.png' alt='javascript' />
+                                <p>Warung Pangan Indonesia</p>
+                                <p> | </p>
+                                <p>Backend Engineer</p>
+                            </div>
+                            <div className='flex items-center gap-3 text-muted-foreground'>
+                                <Image width={32} height={32} src='/companyLogo/bangkit.png' alt='javascript' />
+                                <p>Bangkit</p>
+                                <p> | </p>
+                                <p>Cloud Computing Cohort</p>
+                            </div>
+                        </div>
+
                     </FadeUpCard>
                 </div>
             </FadeUpStagger>
