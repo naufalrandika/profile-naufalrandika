@@ -9,6 +9,9 @@ const languages = [
     { name: 'Python', img: '/programLangs/Python.svg' },
     { name: 'PHP', img: '/programLangs/PHP.svg' },
     { name: 'TypeScript', img: '/programLangs/TypeScript.svg' },
+    { name: 'NodeJs', img: '/programLangs/Nodejs.svg' },
+    { name: 'Laravel', img: '/programLangs/Laravel.svg' },
+    { name: 'React', img: '/programLangs/React.svg' },
 ];
 
 export default function ProgLanguages() {
@@ -42,7 +45,7 @@ export default function ProgLanguages() {
         <main>
             <FadeUpStagger>
                 <FadeUpDiv>
-                    <h1 className='text-2xl font-black text-center'>Programing Languages</h1>
+                    <h1 className='text-2xl font-black text-center'>Tools</h1>
                     <Slider {...settings}>
                         {languages.map((language, index) => (
                             <div key={index} style={{ textAlign: 'center', padding: '10px' }}>

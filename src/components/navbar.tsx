@@ -55,7 +55,7 @@ const Navbar = () => {
                                     <Link href="/support">Hire Me</Link>
                                 </li>
                                 <li className="px-3 py-1">
-                                    <Link href="/faq">FAQ</Link>
+                                    <Link href="#faq">FAQ</Link>
                                 </li>
                             </ul>
                         ) : null}

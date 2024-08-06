@@ -3,6 +3,7 @@ import { ThemeProvider } from "next-themes";
 import Navbar from "@/components/navbar";
 import ProgLanguages from "./progLanguages";
 import Projects from "./projects";
+import Faq from "./faq";
 import Footer from "@/components/footer";
 
 export default function Home() {
@@ -15,6 +16,10 @@ export default function Home() {
         <ProgLanguages />
         <div className="h-12"></div>
         <Projects />
+        <div className="h-12"></div>
+        <section id="faq">
+          <Faq />
+        </section>
       </div>
       {/* <Footer /> */}
     </ThemeProvider>
