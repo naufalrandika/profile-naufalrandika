@@ -127,6 +127,12 @@ export default function Hero() {
                                 <p> | </p>
                                 <p>Cloud Computing Cohort</p>
                             </div>
+                            <div className='flex items-center gap-3 text-muted-foreground'>
+                                <Image width={32} height={32} src='/companyLogo/undip.jpeg' alt='javascript' />
+                                <p>Diponegoro University</p>
+                                <p> | </p>
+                                <p>Informatics Student</p>
+                            </div>
                         </div>
 
                     </FadeUpCard>
