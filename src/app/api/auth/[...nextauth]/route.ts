@@ -8,6 +8,7 @@ const handler = NextAuth({
       clientSecret: process.env.GITHUB_SECRET as string,
     }),
   ],
+  secret: process.env.NEXTAUTH_SECRET as string,
   callbacks: {
     async signIn({ user, account, profile }) {
       // Only allow a specific GitHub account to sign in
