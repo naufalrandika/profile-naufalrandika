@@ -1,16 +1,18 @@
-import SessionWrapper from '@/app/login/components/sessionwrapper'; // Sesuaikan path sesuai dengan struktur proyek Anda
+import SessionWrapper from '@/app/login/components/sessionwrapper';
+import { ThemeProvider } from 'next-themes';
 
 export default function ControlPanelLayout({
-  children,
+    children,
 }: {
-  children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-  return (
-    <SessionWrapper>
-      <div>
-        {/* Tambahkan komponen atau elemen khusus untuk control panel jika diperlukan */}
-        {children}
-      </div>
-    </SessionWrapper>
-  );
+    return (
+        <SessionWrapper>
+            <div>
+                <ThemeProvider attribute="class">
+                    {children}
+                </ThemeProvider>
+            </div>
+        </SessionWrapper>
+    );
 }
