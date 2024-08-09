@@ -14,9 +14,9 @@ const handler = NextAuth({
       // Only allow a specific GitHub account to sign in
       return user.email === "naufalrandika44@gmail.com";
     },
-    async redirect({ baseUrl }) {
-      // Always redirect to control-panel after successful login
-      return `${baseUrl}/control-panel`;
+    async redirect() {
+      // Redirect to control-panel after successful login
+      return "/control-panel";
     },
   },
   
