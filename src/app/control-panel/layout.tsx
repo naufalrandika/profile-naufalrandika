@@ -8,11 +8,10 @@ export default function ControlPanelLayout({
 }) {
     return (
         <SessionWrapper>
-            <div>
-                <ThemeProvider attribute="class">
-                    {children}
-                </ThemeProvider>
-            </div>
+            <ThemeProvider attribute="class">
+                {children}
+            </ThemeProvider>
         </SessionWrapper>
+
     );
 }

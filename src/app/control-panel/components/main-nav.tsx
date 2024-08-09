@@ -14,22 +14,28 @@ export function MainNav({
     >
       <ThemeToggle />
       <Link
-        href="/examples/dashboard"
+        href=""
         className="text-sm font-medium transition-colors hover:text-primary"
       >
         Overview
       </Link>
       <Link
-        href="/examples/dashboard"
+        href=""
         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
       >
         Experiences
       </Link>
       <Link
-        href="/examples/dashboard"
+        href=""
         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
       >
         Projects
+      </Link>
+      <Link
+        href=""
+        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+      >
+        Blogs
       </Link>
     </nav>
   )

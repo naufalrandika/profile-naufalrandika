@@ -8,6 +8,9 @@ import ProgLanguages from "@/app/progLanguages";
 import Projects from "@/app/projects";
 import Faq from "@/app/faq";
 import { Card } from "@/components/ui/card";
+import Link from "next/link"
+import { buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
 
 
 export default function Home() {
@@ -29,15 +32,15 @@ export default function Home() {
                 </div>
                 <div className='container space-y-6 lg:my-10 mt-16'>
                     <Card className="p-10 border border-red-800">
-                    <Hero />
-                    <div className="h-12"></div>
-                    <ProgLanguages />
-                    <div className="h-12"></div>
-                    <Projects />
-                    <div className="h-12"></div>
-                    <section id="faq">
-                        <Faq />
-                    </section>
+                        <Hero />
+                        <div className="h-12"></div>
+                        <ProgLanguages />
+                        <div className="h-12"></div>
+                        <Projects />
+                        <div className="h-12"></div>
+                        <section id="faq">
+                            <Faq />
+                        </section>
                     </Card>
                 </div>
             </div>
@@ -45,8 +48,20 @@ export default function Home() {
     }
 
     return (
-        <div>
-            <p>You are not signed in</p>
+        <div className="flex justify-center items-center h-screen">
+            <div className="lg:p-8 items-center justify-center">
+                <div className="mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]">
+                    <div className="flex flex-col space-y-2 text-center">
+                        You are not logged in.
+                        <Link href="/login"
+                            className={cn(
+                                buttonVariants({ variant: "ghost" }),
+                                ""
+                            )}> Login
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
