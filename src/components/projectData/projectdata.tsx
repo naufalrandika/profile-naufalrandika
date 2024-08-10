@@ -1,55 +1,55 @@
 export interface Project {
     name: string
-    artist: string
+    description: string
     cover: string
 }
 
 export const projectData: Project[] = [
     {
         name: "React Rendezvous",
-        artist: "Ethan Byte",
+        description: "Ethan Byte",
         cover:
             "/projects/image.png",
     },
     {
         name: "Async Awakenings",
-        artist: "Nina Netcode",
+        description: "Nina Netcode",
         cover:
             "/projects/image.png",
     },
     {
         name: "The Art of Reusability",
-        artist: "Lena Logic",
+        description: "Lena Logic",
         cover:
             "/projects/image.png",
     },
     {
         name: "Stateful Symphony",
-        artist: "Beth Binary",
+        description: "Beth Binary",
         cover:
             "/projects/image.png",
     },
     {
         name: "React Rendezvous",
-        artist: "Ethan Byte",
+        description: "Ethan Byte",
         cover:
             "/projects/image.png",
     },
     {
         name: "Async Awakenings",
-        artist: "Nina Netcode",
+        description: "Nina Netcode",
         cover:
             "/projects/image.png",
     },
     {
         name: "The Art of Reusability",
-        artist: "Lena Logic",
+        description: "Lena Logic",
         cover:
             "/projects/image.png",
     },
     {
         name: "Stateful Symphony",
-        artist: "Beth Binary",
+        description: "Beth Binary",
         cover:
             "/projects/image.png",
     },

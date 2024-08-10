@@ -26,7 +26,7 @@ export function MainNav({
         Experiences
       </Link>
       <Link
-        href=""
+        href="/control-panel/projects"
         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
       >
         Projects

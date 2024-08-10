@@ -49,7 +49,7 @@ export function ProjectsCard({
       </ContextMenu>
       <div className="space-y-1 text-sm">
         <h3 className="font-medium leading-none">{project.name}</h3>
-        <p className="text-xs text-muted-foreground">{project.artist}</p>
+        <p className="text-xs text-muted-foreground">{project.description}</p>
       </div>
     </div>
   )
